@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86d64749-a484-4439-86e9-ca87512b0d8d" name="默认更改列表" comment="front" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="wq" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Y6wTIXMCQCboQ4TsvUdyF46jpT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="F:\IDEA2020\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\课设\front\src\components" />
+      <recent name="E:\课设\front\src\assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86d64749-a484-4439-86e9-ca87512b0d8d" name="默认更改列表" comment="" />
+      <created>1699859342842</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699859342842</updated>
+      <workItem from="1699859344466" duration="36000" />
+      <workItem from="1699859390279" duration="1282000" />
+      <workItem from="1699860842961" duration="2088000" />
+      <workItem from="1699924481226" duration="16561000" />
+      <workItem from="1700023172635" duration="1708000" />
+      <workItem from="1700201811392" duration="1971000" />
+      <workItem from="1700538413395" duration="35000" />
+      <workItem from="1700821849091" duration="9259000" />
+      <workItem from="1701417030558" duration="577000" />
+      <workItem from="1702649779443" duration="4000" />
+      <workItem from="1702660213383" duration="757000" />
+      <workItem from="1702712448983" duration="9000" />
+      <workItem from="1702717371647" duration="2320000" />
+      <workItem from="1703156602957" duration="10295000" />
+      <workItem from="1703512397506" duration="13000" />
+      <workItem from="1703512423848" duration="14746000" />
+      <workItem from="1703567249011" duration="17245000" />
+      <workItem from="1703786703061" duration="391000" />
+    </task>
+    <task id="LOCAL-00001" summary="front">
+      <created>1703786741874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703786741874</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="front" />
+    <option name="LAST_COMMIT_MESSAGE" value="front" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="91" key="#Deployment" timestamp="1703582256604">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="91" key="#Deployment/0.0.1536.864@0.0.1536.864" timestamp="1703582256604" />
+    <state x="630" y="342" key="#ESLint" timestamp="1699925673970">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="630" y="342" key="#ESLint/0.0.1536.864@0.0.1536.864" timestamp="1699925673970" />
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1699859985839">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1699859985839" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1700202144108">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1700202144108" />
+    <state x="471" y="116" key="#run" timestamp="1699859972753">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="471" y="116" key="#run/0.0.1536.864@0.0.1536.864" timestamp="1699859972753" />
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1703786881175">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1703786881175" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1703156767900">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1703156767900" />
+    <state width="1493" height="281" key="GridCell.Tab.0.bottom" timestamp="1703593335412">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="281" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1703593335412" />
+    <state width="1493" height="281" key="GridCell.Tab.0.center" timestamp="1703593335412">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="281" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1703593335412" />
+    <state width="1493" height="281" key="GridCell.Tab.0.left" timestamp="1703593335411">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="281" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1703593335411" />
+    <state width="1493" height="281" key="GridCell.Tab.0.right" timestamp="1703593335412">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="281" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1703593335412" />
+    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1703786826272">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1703786826272" />
+  </component>
+</project>
