@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86d64749-a484-4439-86e9-ca87512b0d8d" name="默认更改列表" comment="front" />
+    <list default="true" id="86d64749-a484-4439-86e9-ca87512b0d8d" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Aside.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/courier/CourierManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/courier/CourierManager.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/deliverypoint/DeliverypointManager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/deliverypoint/DeliverypointManager.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/order/OrderManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/order/OrderManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pickupcode/PickupcodeManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pickupcode/PickupcodeManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/UserManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/UserManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../HIS/hospital_view-master/hospital_view-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,6 +58,9 @@
     <property name="ts.external.directory.path" value="F:\IDEA2020\IntelliJ IDEA 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\课设\courier\courier\front\src\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\课设\front\src\components" />
       <recent name="E:\课设\front\src\assets" />
@@ -89,7 +105,23 @@
       <workItem from="1703512397506" duration="13000" />
       <workItem from="1703512423848" duration="14746000" />
       <workItem from="1703567249011" duration="17245000" />
-      <workItem from="1703786703061" duration="391000" />
+      <workItem from="1703786703061" duration="1367000" />
+      <workItem from="1703814283610" duration="2441000" />
+      <workItem from="1703822223462" duration="3212000" />
+      <workItem from="1703829363664" duration="413000" />
+      <workItem from="1705463881020" duration="138000" />
+      <workItem from="1708868439246" duration="657000" />
+      <workItem from="1709134759265" duration="59000" />
+      <workItem from="1709134893684" duration="638000" />
+      <workItem from="1710948248304" duration="303000" />
+      <workItem from="1710949874881" duration="410000" />
+      <workItem from="1710950365193" duration="243000" />
+      <workItem from="1710951118919" duration="653000" />
+      <workItem from="1711122957344" duration="997000" />
+      <workItem from="1711126248740" duration="3564000" />
+      <workItem from="1711174262591" duration="338000" />
+      <workItem from="1711174727947" duration="3045000" />
+      <workItem from="1711181520939" duration="1553000" />
     </task>
     <task id="LOCAL-00001" summary="front">
       <created>1703786741874</created>
@@ -98,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703786741874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="front">
+      <created>1703787212845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703787212845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,49 +152,37 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="91" key="#Deployment/0.0.1536.864@0.0.1536.864" timestamp="1703582256604" />
-    <state x="630" y="342" key="#ESLint" timestamp="1699925673970">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1709134934039">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="630" y="342" key="#ESLint/0.0.1536.864@0.0.1536.864" timestamp="1699925673970" />
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1699859985839">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1709134934039" />
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1703787211285">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1699859985839" />
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1700202144108">
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1703787211285" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1709134813944">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1700202144108" />
-    <state x="471" y="116" key="#run" timestamp="1699859972753">
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1709134813944" />
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom" timestamp="1711178007650">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="471" y="116" key="#run/0.0.1536.864@0.0.1536.864" timestamp="1699859972753" />
-    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1703786881175">
+    <state width="1493" height="107" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1711178007650" />
+    <state width="1493" height="107" key="GridCell.Tab.0.center" timestamp="1711178007649">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1703786881175" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1703156767900">
+    <state width="1493" height="107" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1711178007649" />
+    <state width="1493" height="107" key="GridCell.Tab.0.left" timestamp="1711178007649">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1703156767900" />
-    <state width="1493" height="281" key="GridCell.Tab.0.bottom" timestamp="1703593335412">
+    <state width="1493" height="107" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1711178007649" />
+    <state width="1493" height="107" key="GridCell.Tab.0.right" timestamp="1711178007650">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="281" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1703593335412" />
-    <state width="1493" height="281" key="GridCell.Tab.0.center" timestamp="1703593335412">
+    <state width="1493" height="107" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1711178007650" />
+    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1703787182235">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="281" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1703593335412" />
-    <state width="1493" height="281" key="GridCell.Tab.0.left" timestamp="1703593335411">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="281" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1703593335411" />
-    <state width="1493" height="281" key="GridCell.Tab.0.right" timestamp="1703593335412">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="281" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1703593335412" />
-    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1703786826272">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1703786826272" />
+    <state x="563" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1703787182235" />
   </component>
 </project>

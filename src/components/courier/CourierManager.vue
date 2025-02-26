@@ -3,9 +3,8 @@
         <div style="margin-bottom: 5px;">
             <el-input v-model="form.couriername" placeholder="请输入名字" suffix-icon="el-icon-search" style="width: 200px;"
                       @keyup.enter.native="listPGet"></el-input>
-            <el-button type="primary" style="margin-left: 8px" @click="listPGet">查询</el-button>
-            <el-button type="success" @click="resetParam">重置</el-button>
-            <el-button type="primary" style="margin-left: 8px" @click="add">新增</el-button>
+            <el-button type="info" round style="margin-left: 8px" @click="listPGet">查询</el-button>
+            <el-button type="primary" round style="margin-left: 8px" @click="add">新增</el-button>
         </div>
         <el-table
                 :data="tableData"
@@ -19,13 +18,13 @@
             </el-table-column>
             <el-table-column prop="isvalid" label="操作">
                 <template slot-scope="scope">
-                    <el-button size="small" type="success" @click="mod(scope.row)">编辑</el-button>
+                    <el-button size="small" type="warning" plain @click="mod(scope.row)">编辑</el-button>
                     <el-popconfirm
                             title="确定删除吗？"
                             @confirm="del(scope.row.courierid)"
                             style="margin-left: 5px"
                     >
-                        <el-button slot="reference" size="small" type="danger">删除</el-button>
+                        <el-button slot="reference" size="small" plain type="danger">删除</el-button>
                     </el-popconfirm>
 <!--                                    <el-button size="small" type="danger" @click="del(scope.row.id)">删除</el-button>-->
                 </template>
@@ -35,7 +34,9 @@
                 title="提示"
                 :visible.sync="centerDialogVisible"
                 width="30%"
-                center>
+                center
+                class="custom-dialog"
+        >
             <el-form ref="form" :model="form" label-width="80px">
                 <el-form-item label="名字" prop="couriername">
                     <el-col :span="20">
@@ -328,9 +329,6 @@
                     this.form.couriername = row.couriername
                     this.form.couriercontact = row.couriercontact
                 })
-            },
-            resetParam() {
-                this.username = ''
             }
         },
         beforeMount() {
@@ -340,5 +338,23 @@
 </script>
 
 <style scoped>
+    .custom-dialog {
+        /* 设置背景颜色 */
+        background-color: #f0f0f0;
+
+        /* 设置边框颜色和宽度 */
+        border: 2px solid #333;
+    }
+
+    /* 设置标题栏背景颜色 */
+    .el-dialog__header {
+        background-color: #4CAF50; /* 绿色 */
+    }
+
+    /* 设置按钮的颜色 */
+    .el-button {
+        background-color: #008CBA; /* 蓝色 */
+        color: #fff; /* 文字颜色为白色 */
+    }
 
 </style>

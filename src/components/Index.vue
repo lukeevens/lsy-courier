@@ -1,7 +1,7 @@
 <template>
     <el-container style="height: 100%; border: 1px solid #eee">
         <!-- 页眉（顶部） -->
-        <el-header style="text-align: right; font-size: 12px; height: 8vh; border-bottom: rgb(0,254,195) 1px solid">
+        <el-header style="text-align: right; font-size: 12px; height: 8vh; border-bottom: rgb(254,229,0) 1px solid">
             <Header @doCollapse="doCollapse" :icon="icon">
             </Header>
         </el-header>
@@ -55,7 +55,7 @@
 
 <style scoped>
     .el-header {
-        background-color: #21ada2;
+        background-color: #e0d3a4;
         color: #333;
         line-height: 40px;
     }

@@ -80,7 +80,8 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: #B3C0D1;
+        background: url('../assets/OIP-C.jpg') no-repeat center center fixed;
+        background-size: cover;
     }
     .loginDiv {
         position: absolute;
