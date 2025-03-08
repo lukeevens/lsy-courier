@@ -1,82 +1,157 @@
 <!-- SideMenu.vue -->
 <template>
     <el-menu
-            style="height: 120vh"
-            background-color="#fff"
-            text-color="#000"
-            active-text-color="#ffd04b"
-            default-active="/Home"
-            :collapse="isCollapse"
-            menu-align="left"
-            :collapse-transition="false"
-            router
-            class="blue-bordered-menu"
+        :style="{ width: isCollapse ? '64px' : '200px' }"
+        style="height: 100vh"
+        background-color="#fff"
+        text-color="#000"
+        active-text-color="#409EFF"
+        :default-active="$route.path"
+        :collapse="isCollapse"
+        router
+        class="blue-bordered-menu"
     >
-        <el-menu-item index="/home" class="leftAligned">
+        <div class="logo-container" :class="{ 'collapsed': isCollapse }">
+            <i class="el-icon-s-promotion logo-icon"></i>
+            <span class="logo-text" v-show="!isCollapse">快递管理系统</span>
+        </div>
+
+        <el-menu-item index="/home" class="menu-item">
             <i class="el-icon-s-home"></i>
             <span slot="title">首页</span>
         </el-menu-item>
 
-        <el-menu-item
-                :index="`/${item.menuClick}`"
-                v-for="(item, index) in menu"
-                :key="index"
-                class="leftAligned"
-        >
-            <div class="menu-item-content">
-                <i :class="item.menuIcon"></i>
-                <span slot="title">{{ item.menuName }}</span>
-            </div>
-        </el-menu-item>
+        <el-submenu index="1">
+            <template slot="title">
+                <i class="el-icon-user"></i>
+                <span>用户管理</span>
+            </template>
+            <el-menu-item index="/user" class="menu-item">用户列表</el-menu-item>
+        </el-submenu>
+
+        <el-submenu index="2">
+            <template slot="title">
+                <i class="el-icon-s-custom"></i>
+                <span>快递员管理</span>
+            </template>
+            <el-menu-item index="/courier" class="menu-item">快递员列表</el-menu-item>
+        </el-submenu>
+
+        <el-submenu index="3">
+            <template slot="title">
+                <i class="el-icon-s-order"></i>
+                <span>订单管理</span>
+            </template>
+            <el-menu-item index="/order" class="menu-item">订单列表</el-menu-item>
+        </el-submenu>
+
+        <el-submenu index="4">
+            <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>取件点管理</span>
+            </template>
+            <el-menu-item index="/deliverypoint" class="menu-item">取件点列表</el-menu-item>
+        </el-submenu>
+
+        <el-submenu index="5">
+            <template slot="title">
+                <i class="el-icon-tickets"></i>
+                <span>取件码管理</span>
+            </template>
+            <el-menu-item index="/pickupcode" class="menu-item">取件码列表</el-menu-item>
+        </el-submenu>
+
+        <el-submenu index="6">
+            <template slot="title">
+                <i class="el-icon-chat-line-round"></i>
+                <span>评价反馈</span>
+            </template>
+            <el-menu-item index="/feedback" class="menu-item">评价列表</el-menu-item>
+        </el-submenu>
     </el-menu>
 </template>
 
 <script>
     export default {
-        name: "SideMenu",
+        name: "Aside",
         data() {
             return {
-                isCollapse: false,
-                defaultActive: "/home", // 设置默认激活的菜单项
-                menu: [
-                    { menuClick: "user", menuName: "用户管理", menuIcon: "el-icon-user-solid" },
-                    { menuClick: "order", menuName: "订单管理", menuIcon: "el-icon-s-order" },
-                    { menuClick: "pickupcode", menuName: "取件码管理", menuIcon: "el-icon-tickets" },
-                    { menuClick: "courier", menuName: "快递员管理管理", menuIcon: "el-icon-user" },
-                    { menuClick: "deliverypoint", menuName: "取件站管理", menuIcon: "el-icon-location-information" },
-                ],
+                isCollapse: false
             };
         },
+        created() {
+            // 监听折叠事件
+            this.$bus.$on('toggle-collapse', (isCollapse) => {
+                this.isCollapse = isCollapse
+            })
+        },
+        beforeDestroy() {
+            // 组件销毁前移除事件监听
+            this.$bus.$off('toggle-collapse')
+        }
     };
 </script>
 
 <style scoped>
-    .leftAligned {
-        text-align: left;
-        padding-left: 20px; /* 调整左边距 */
+    .blue-bordered-menu {
+        border-right: 2px solid #409EFF;
+        transition: width 0.3s;
     }
 
-    .menu-item-content {
+    .logo-container {
+        height: 60px;
+        padding: 0 20px;
         display: flex;
         align-items: center;
+        transition: all 0.3s;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
-    .menu-item-content i {
-        margin-right: 10px; /* 调整图标和文字之间的间距 */
+    .logo-container.collapsed {
+        padding: 0 20px;
     }
 
-    .el-menu-item {
-        border-radius: 50px; /* 为圆形边框设置边框半径 */
-        overflow: hidden; /* 隐藏溢出以确保圆形形状 */
+    .logo-icon {
+        font-size: 24px;
+        color: #409EFF;
+        margin-right: 12px;
     }
 
-    .blue-bordered-menu {
-        border-right: 2px solid #007BFF; /* 添加蓝色右边框 */
+    .logo-text {
+        font-size: 18px;
+        font-weight: 600;
+        color: #303133;
     }
 
-    .leftAligned i {
-        margin-right: 10px; /* 调整图标和文字之间的间距 */
-        font-size: 16px; /* 图标的字体大小 */
-        color: #007BFF; /* 图标颜色 */
+    .menu-item {
+        border-radius: 4px;
+        margin: 4px 8px;
+    }
+
+    .menu-item:hover {
+        background-color: #ecf5ff !important;
+    }
+
+    .el-menu {
+        border-right: none;
+    }
+
+    .el-menu-item [class^="el-icon-"],
+    .el-submenu [class^="el-icon-"] {
+        margin-right: 5px;
+        width: 24px;
+        text-align: center;
+        font-size: 18px;
+        color: #409EFF;
+    }
+
+    .el-submenu__title:hover {
+        background-color: #ecf5ff !important;
+    }
+
+    /* 折叠动画 */
+    .el-menu-vertical:not(.el-menu--collapse) {
+        width: 200px;
     }
 </style>
