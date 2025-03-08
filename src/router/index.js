@@ -8,7 +8,7 @@ import DeliveryPoint from "../page/deliverypoint/DeliveryPoint.vue";
 import PickupCode from "../page/pickupcode/PickupCode.vue";
 import Feedback from "../page/feedback/Feedback.vue";
 import Layout from '@/layout/Index.vue'
-import login from '../page/Login.vue'
+import TemperatureMonitor from '@/page/special/TemperatureMonitor.vue'
 
 Vue.use(VueRouter);
 
@@ -58,6 +58,12 @@ const routes = [
                 path: "/feedback",
                 name: "feedback",
                 component: Feedback
+            },
+            {
+                path: '/special-package',
+                name: 'TemperatureMonitor',
+                component: TemperatureMonitor,
+                meta: { title: '温度监控', requireAuth: true }
             }
         ]
     },

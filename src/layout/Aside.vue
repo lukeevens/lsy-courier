@@ -60,6 +60,15 @@
             </template>
             <el-menu-item index="/feedback" class="menu-item">评价列表</el-menu-item>
         </el-submenu>
+
+        <el-submenu index="7">
+            <template slot="title">
+                <i class="el-icon-warning"></i>
+                <span>特殊包裹监控</span>
+            </template>
+            <el-menu-item index="/special-package" class="menu-item">温度监控</el-menu-item>
+            <el-menu-item index="/abnormal-package" class="menu-item">异常包裹</el-menu-item>
+        </el-submenu>
     </el-menu>
 </template>
 
@@ -100,9 +109,9 @@ export default {
     white-space: nowrap;
 }
 
-.logo-container.collapsed {
+/* .logo-container.collapsed {
     padding: 0 20px;
-}
+} */
 
 .logo-icon {
     font-size: 24px;
@@ -118,7 +127,7 @@ export default {
 
 .menu-item {
     border-radius: 4px;
-    margin: 4px 8px;
+    /* margin: 4px 8px; */
 }
 
 .menu-item:hover {
