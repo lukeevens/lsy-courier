@@ -14,6 +14,7 @@ import './mock/order'
 import './mock/deliverypoint'
 import './mock/feedback'
 import './mock/pickupcode'
+import './mock/special'
 
 // 创建事件总线
 Vue.prototype.$bus = new Vue()

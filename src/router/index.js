@@ -9,7 +9,7 @@ import PickupCode from "../page/pickupcode/PickupCode.vue";
 import Feedback from "../page/feedback/Feedback.vue";
 import Layout from '@/layout/Index.vue'
 import TemperatureMonitor from '@/page/special/TemperatureMonitor.vue'
-
+import AbnormalPackage from '@/page/special/AbnormalPackage.vue'
 Vue.use(VueRouter);
 
 const routes = [
@@ -63,7 +63,13 @@ const routes = [
                 path: '/special-package',
                 name: 'TemperatureMonitor',
                 component: TemperatureMonitor,
-                meta: { title: '温度监控', requireAuth: true }
+                // meta: { title: '温度监控', requireAuth: true }
+            },
+            {
+                path: '/abnormal-package',
+                name: 'AbnormalPackage',
+                component: AbnormalPackage,
+                // meta: { title: '温度监控', requireAuth: true }
             }
         ]
     },
