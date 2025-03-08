@@ -1,16 +1,8 @@
 <!-- SideMenu.vue -->
 <template>
-    <el-menu
-        :style="{ width: isCollapse ? '64px' : '200px' }"
-        style="height: 100vh"
-        background-color="#fff"
-        text-color="#000"
-        active-text-color="#409EFF"
-        :default-active="$route.path"
-        :collapse="isCollapse"
-        router
-        class="blue-bordered-menu"
-    >
+    <el-menu :style="{ width: isCollapse ? '64px' : '200px' }" style="height: 100vh" background-color="#fff"
+        text-color="#000" active-text-color="#409EFF" :default-active="$route.path" :collapse="isCollapse" router
+        class="blue-bordered-menu">
         <div class="logo-container" :class="{ 'collapsed': isCollapse }">
             <i class="el-icon-s-promotion logo-icon"></i>
             <span class="logo-text" v-show="!isCollapse">快递管理系统</span>
@@ -72,86 +64,86 @@
 </template>
 
 <script>
-    export default {
-        name: "Aside",
-        data() {
-            return {
-                isCollapse: false
-            };
-        },
-        created() {
-            // 监听折叠事件
-            this.$bus.$on('toggle-collapse', (isCollapse) => {
-                this.isCollapse = isCollapse
-            })
-        },
-        beforeDestroy() {
-            // 组件销毁前移除事件监听
-            this.$bus.$off('toggle-collapse')
-        }
-    };
+export default {
+    name: "Aside",
+    data() {
+        return {
+            isCollapse: false
+        };
+    },
+    created() {
+        // 监听折叠事件
+        this.$bus.$on('toggle-collapse', (isCollapse) => {
+            this.isCollapse = isCollapse
+        })
+    },
+    beforeDestroy() {
+        // 组件销毁前移除事件监听
+        this.$bus.$off('toggle-collapse')
+    }
+};
 </script>
 
 <style scoped>
-    .blue-bordered-menu {
-        border-right: 2px solid #409EFF;
-        transition: width 0.3s;
-    }
+.blue-bordered-menu {
+    border-right: 2px solid #409EFF;
+    transition: width 0.3s;
+}
 
-    .logo-container {
-        height: 60px;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
-        transition: all 0.3s;
-        overflow: hidden;
-        white-space: nowrap;
-    }
+.logo-container {
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
-    .logo-container.collapsed {
-        padding: 0 20px;
-    }
+.logo-container.collapsed {
+    padding: 0 20px;
+}
 
-    .logo-icon {
-        font-size: 24px;
-        color: #409EFF;
-        margin-right: 12px;
-    }
+.logo-icon {
+    font-size: 24px;
+    color: #409EFF;
+    margin-right: 12px;
+}
 
-    .logo-text {
-        font-size: 18px;
-        font-weight: 600;
-        color: #303133;
-    }
+.logo-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #303133;
+}
 
-    .menu-item {
-        border-radius: 4px;
-        margin: 4px 8px;
-    }
+.menu-item {
+    border-radius: 4px;
+    margin: 4px 8px;
+}
 
-    .menu-item:hover {
-        background-color: #ecf5ff !important;
-    }
+.menu-item:hover {
+    background-color: #ecf5ff !important;
+}
 
-    .el-menu {
-        border-right: none;
-    }
+.el-menu {
+    border-right: none;
+}
 
-    .el-menu-item [class^="el-icon-"],
-    .el-submenu [class^="el-icon-"] {
-        margin-right: 5px;
-        width: 24px;
-        text-align: center;
-        font-size: 18px;
-        color: #409EFF;
-    }
+.el-menu-item [class^="el-icon-"],
+.el-submenu [class^="el-icon-"] {
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+    color: #409EFF;
+}
 
-    .el-submenu__title:hover {
-        background-color: #ecf5ff !important;
-    }
+.el-submenu__title:hover {
+    background-color: #ecf5ff !important;
+}
 
-    /* 折叠动画 */
-    .el-menu-vertical:not(.el-menu--collapse) {
-        width: 200px;
-    }
+/* 折叠动画 */
+.el-menu-vertical:not(.el-menu--collapse) {
+    width: 200px;
+}
 </style>

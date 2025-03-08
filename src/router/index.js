@@ -1,30 +1,80 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../components/home/Home.vue";
-import User from "../components/user/User.vue";
-import Courier from "../components/courier/Courier.vue";
-import Order from "../components/order/Order.vue";
-import DeliveryPoint from "../components/deliverypoint/DeliveryPoint.vue";
-import PickupCode from "../components/pickupcode/PickupCode.vue";
-import Feedback from "../components/feedback/Feedback.vue";
+import Home from "../page/home/Home.vue";
+import User from "../page/user/User.vue";
+import Courier from "../page/courier/Courier.vue";
+import Order from "../page/order/Order.vue";
+import DeliveryPoint from "../page/deliverypoint/DeliveryPoint.vue";
+import PickupCode from "../page/pickupcode/PickupCode.vue";
+import Feedback from "../page/feedback/Feedback.vue";
+import Layout from '@/layout/Index.vue'
+import login from '../page/Login.vue'
 
 Vue.use(VueRouter);
 
 const routes = [
     {
         path: '/',
-        name: 'login',
-        component: () => import('../components/Login')
+        component: Layout,
+        redirect: '/admin/package-records',
+        children: [
+            {
+                path: '/admin/package-records',
+                name: 'AdminPackageRecords',
+                component: () => import('@/page/admin/AdminPackageRecords.vue'),
+                meta: { title: '包裹记录', requireAuth: true }
+            },
+            {
+                path: "/home",
+                name: "home",
+                component: Home
+            },
+            {
+                path: "/user",
+                name: "user",
+                component: User
+            },
+            {
+                path: "/courier",
+                name: "courier",
+                component: Courier
+            },
+            {
+                path: "/order",
+                name: "order",
+                component: Order
+            },
+            {
+                path: "/deliverypoint",
+                name: "deliverypoint",
+                component: DeliveryPoint
+            },
+            {
+                path: "/pickupcode",
+                name: "pickupcode",
+                component: PickupCode
+            },
+            {
+                path: "/feedback",
+                name: "feedback",
+                component: Feedback
+            }
+        ]
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: () => import('@/page/Login.vue')
     },
     {
         path: '/register',
         name: 'register',
-        component: () => import('../components/Register')
+        component: () => import('../page/Register')
     },
     {
         path: '/index',
         name: 'index',
-        component: () => import('../components/Index'),
+        component: () => import('../layout/Index'),
         children: [
             {
                 path: "/home",
@@ -68,5 +118,15 @@ const routes = [
 const router = new VueRouter({
     routes,
 });
+
+// 路由守卫
+router.beforeEach((to, from, next) => {
+    const token = localStorage.getItem('token')
+    if (to.meta.requireAuth && !token) {
+        next('/login')
+    } else {
+        next()
+    }
+})
 
 export default router;

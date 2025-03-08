@@ -1,7 +1,8 @@
-import vue from 'vue'
+import Vue from 'vue'
 import Vuex from 'vuex'
 import router,{resetRouter} from "../router";
-vue.use(Vuex)
+
+Vue.use(Vuex)
 
 function addNewRoute(menuList) {
     console.log(menuList)
@@ -30,9 +31,23 @@ function addNewRoute(menuList) {
 
 export default new Vuex.Store({
     state: {
+        userInfo: null,
+        token: localStorage.getItem('token') || '',
         menu: []
     },
     mutations: {
+        SET_TOKEN(state, token) {
+            state.token = token
+            localStorage.setItem('token', token)
+        },
+        SET_USER_INFO(state, userInfo) {
+            state.userInfo = userInfo
+        },
+        CLEAR_USER_INFO(state) {
+            state.userInfo = null
+            state.token = ''
+            localStorage.removeItem('token')
+        },
         setMenu(state,menuList) {
             state.menu = menuList
 
@@ -43,5 +58,8 @@ export default new Vuex.Store({
         getMenu(state) {
             return state.menu
         }
+    },
+    actions: {
+        // 异步操作
     }
 })
